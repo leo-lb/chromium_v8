@@ -32,7 +32,7 @@ group("gn_all") {
     deps += [
       "cctest:cctest",
       "cctest:generate-bytecode-expectations",
-      "unittests:unittests",
+      #"unittests:unittests",
     ]
   }
 }
@@ -82,10 +82,10 @@ group("v8_bot_default") {
     "mjsunit:v8_mjsunit",
     "mkgrokdump:mkgrokdump",
     "preparser:v8_preparser",
-    "unittests:unittests",
+    #"unittests:unittests",
     "wasm-api-tests:wasm_api_tests",
     "wasm-js:v8_wasm_js",
-    "wasm-spec-tests:v8_wasm_spec_tests",
+    #"wasm-spec-tests:v8_wasm_spec_tests",
     "webkit:v8_webkit",
   ]
 }
@@ -103,10 +103,10 @@ group("v8_default") {
     "mjsunit:v8_mjsunit",
     "mkgrokdump:mkgrokdump",
     "preparser:v8_preparser",
-    "unittests:unittests",
+    #"unittests:unittests",
     "wasm-api-tests:wasm_api_tests",
-    "wasm-js:v8_wasm_js",
-    "wasm-spec-tests:v8_wasm_spec_tests",
+    #"wasm-js:v8_wasm_js",
+    #"wasm-spec-tests:v8_wasm_spec_tests",
   ]
 }
 

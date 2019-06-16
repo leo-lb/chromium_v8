@@ -581,12 +581,6 @@ config("toolchain") {
     }
     if (host_byteorder == "little") {
       defines += [ "V8_TARGET_ARCH_PPC_LE" ]
-        cflags += [
-        # Enable usage of AltiVec, VSX, and other POWER8 and higher features
-        "-mcpu=power8",
-        "-maltivec",
-        "-mvsx",
-      ]
     } else if (host_byteorder == "big") {
       defines += [ "V8_TARGET_ARCH_PPC_BE" ]
       if (current_os == "aix") {
